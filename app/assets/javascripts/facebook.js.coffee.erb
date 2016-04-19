@@ -13,7 +13,11 @@ jQuery ->
     $('#sign_in_fb').click (e) ->
       e.preventDefault()
       FB.login (response) ->
+<<<<<<< HEAD
         window.location = '/auth/facebook/callback' if response.authResponse
+=======
+        window.location = '/users/auth/facebook/callback' if response.authResponse
+>>>>>>> 88bfef548e4799da95d94ecde8a300b2fe52d038
 
     $('#sign_out').click (e) ->
       FB.getLoginStatus (response) ->

@@ -50,6 +50,10 @@ gem 'bxslider-rails'
 
 gem 'dropzonejs-rails'
 #
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88bfef548e4799da95d94ecde8a300b2fe52d038
 gem 'omniauth-facebook'
 
 gem 'entypo-rails'

@@ -1,22 +1,41 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+=======
+  resources :property_images
+>>>>>>> 88bfef548e4799da95d94ecde8a300b2fe52d038
   devise_for :users, :controllers => {
     :registrations => "users/registrations",
     :sessions => "users/sessions",
     :passwords => "users/passwords",
     :confirmations => "users/confirmations",
+<<<<<<< HEAD
     :omniauth_callbacks => "users/omniauth_callbacks"
   }
   match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
  
+=======
+    :omniauth_callbacks => "omniauth_callbacks"
+  }
+  match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
+
+>>>>>>> 88bfef548e4799da95d94ecde8a300b2fe52d038
   get "/popups/signup" => "popup#signup"
   get "/popups/login" => "popup#login"
   get "/popups/password" => "popup#password"
 
+<<<<<<< HEAD
    get "/subscriptions/subscribe" => "subscriptions#subscribe"
 
   # delete "/p_listings/edit" => "property_images#destroy"
 
   # get "/auth/facebook/callback" => "home#index"
+=======
+  get "/subscriptions/subscribe" => "subscriptions#subscribe"
+
+  # get "/p_listings/detail" => "p_listings#detail"
+
+
+>>>>>>> 88bfef548e4799da95d94ecde8a300b2fe52d038
   resources :registrations
   resources :plans do
     collection do
@@ -29,8 +48,11 @@ Rails.application.routes.draw do
   end
 
 
+<<<<<<< HEAD
   resources :pdetails
   resources :cdns
+=======
+>>>>>>> 88bfef548e4799da95d94ecde8a300b2fe52d038
   resources :home
   resources :searches
   resources :property_images
